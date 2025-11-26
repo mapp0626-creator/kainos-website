@@ -27,7 +27,7 @@ const AboutUs: React.FC<SectionProps> = ({ id }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           
           {/* Left Column: Heading */}
-          <div className="sticky top-32">
+          <div className=" top-32">
             <h4 className="text-xs font-bold text-gray-400 uppercase tracking-[0.2em] mb-4">
               01 / Company Overview
             </h4>

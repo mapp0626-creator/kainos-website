@@ -49,7 +49,7 @@ const DisclaimerModal: React.FC<DisclaimerModalProps> = ({ onAccept }) => {
             </p>
             
             <p>
-              <strong>Regulatory Status:</strong> Kainos Capital is licensed by the Securities and Futures Commission of Hong Kong (the "SFC"). The content of this website has not been reviewed by the SFC.
+              <strong>Regulatory Status:</strong> Kainos Investment is licensed by the Securities and Futures Commission of Hong Kong (the "SFC"). The content of this website has not been reviewed by the SFC.
             </p>
             
             <p>
