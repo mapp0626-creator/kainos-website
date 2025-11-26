@@ -30,14 +30,15 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header 
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-4 border-b border-gray-100' : 'bg-transparent py-6'
-      }`}
+    <header
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-4 border-b border-gray-100' : 'bg-transparent py-6'
+        }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#" onClick={(e) => handleScrollTo(e, '#top')}>
-          <Logo className="h-8" light={!isScrolled} />
+          {/* 글자는 SVG 안에 들어있으니, 높이만 지정하면 비율에 맞춰 아이콘과 글자가 함께 커집니다. 
+          */}
+          <Logo className="h-20" light={!isScrolled} />
         </a>
 
         {/* Desktop Nav */}
@@ -47,20 +48,18 @@ const Header: React.FC = () => {
               key={link.label}
               href={link.href}
               onClick={(e) => handleScrollTo(e, link.href)}
-              className={`text-xs font-semibold uppercase tracking-widest transition-colors duration-300 relative group ${
-                isScrolled ? 'text-gray-600 hover:text-black' : 'text-gray-300 hover:text-white'
-              }`}
+              className={`text-xs font-semibold uppercase tracking-widest transition-colors duration-300 relative group ${isScrolled ? 'text-gray-600 hover:text-black' : 'text-gray-300 hover:text-white'
+                }`}
             >
               {link.label}
-              <span className={`absolute -bottom-2 left-0 w-0 h-px transition-all duration-300 group-hover:w-full ${
-                 isScrolled ? 'bg-black' : 'bg-white'
-              }`}></span>
+              <span className={`absolute -bottom-2 left-0 w-0 h-px transition-all duration-300 group-hover:w-full ${isScrolled ? 'bg-black' : 'bg-white'
+                }`}></span>
             </a>
           ))}
         </nav>
 
         {/* Mobile Toggle */}
-        <button 
+        <button
           className="md:hidden z-50"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
@@ -72,9 +71,8 @@ const Header: React.FC = () => {
         </button>
 
         {/* Mobile Menu Overlay */}
-        <div className={`fixed inset-0 bg-gray-900 z-40 flex flex-col items-center justify-center gap-8 transition-transform duration-500 ${
-          mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        } md:hidden`}>
+        <div className={`fixed inset-0 bg-gray-900 z-40 flex flex-col items-center justify-center gap-8 transition-transform duration-500 ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          } md:hidden`}>
           {navLinks.map((link) => (
             <a
               key={link.label}
