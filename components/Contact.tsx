@@ -23,10 +23,9 @@ const Contact: React.FC<SectionProps> = ({ id }) => {
                   <div>
                     <h3 className="text-sm font-bold uppercase tracking-wide text-gray-900 mb-2">Office Address</h3>
                     <p className="text-gray-600 font-light">
-                      Suite 8808, 88/F<br />
-                      Two International Finance Centre<br />
-                      8 Finance Street<br />
-                      Central, Hong Kong
+                      Suite 1117, Sun House<br />
+                      90 Connaught Road Central<br />
+                      Sheung Wan, Hong Kong
                     </p>
                   </div>
                 </div>
@@ -35,8 +34,8 @@ const Contact: React.FC<SectionProps> = ({ id }) => {
                   <Mail className="w-6 h-6 text-gray-400 mt-1" />
                   <div>
                     <h3 className="text-sm font-bold uppercase tracking-wide text-gray-900 mb-2">Inquiries</h3>
-                    <a href="mailto:info@kainos.capital" className="text-gray-600 hover:text-gray-900 hover:underline transition-colors font-light">
-                      info@kainos.capital
+                    <a href="mailto:davidkim@kainosinvestment.com" className="text-gray-600 hover:text-gray-900 hover:underline transition-colors font-light">
+                      davidkim@kainosinvestment.com
                     </a>
                   </div>
                 </div>
@@ -61,12 +60,12 @@ const Contact: React.FC<SectionProps> = ({ id }) => {
             </div>
           </div>
 
-          {/* Map Image (Grayscale placeholder) */}
+          {/* Map Image (Grayscale placeholder) 회끼 빼고 싶으면 className에 grayscale만 빼면 됨*/}
           <div className="relative h-96 lg:h-auto bg-gray-200 overflow-hidden group">
             <img 
-              src="https://images.unsplash.com/photo-1577083165350-16c9f88b4a83?q=80&w=2070&auto=format&fit=crop" 
-              alt="Map of Central Hong Kong" 
-              className="w-full h-full object-cover filter grayscale contrast-125 transition-transform duration-700 group-hover:scale-105"
+              src="/kainos_map.png" 
+              alt="Map image" 
+              className="w-full h-full object-cover filter  contrast-125 transition-transform duration-700 group-hover:scale-105"
             />
             
             {/* Map Pin Overlay */}

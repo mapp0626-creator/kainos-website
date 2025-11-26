@@ -36,7 +36,7 @@ const AboutUs: React.FC<SectionProps> = ({ id }) => {
             </h2>
             <div className="h-px w-24 bg-gray-900 mb-8"></div>
             <p className="text-gray-600 leading-relaxed text-lg mb-8">
-              Kainos Capital is a discretionary asset manager licensed in Hong Kong focusing on enhanced value investment. Our enhanced value investment approach seeks long-term returns based on value investing philosophy – investments with the potential for sustainable earnings growth – while capitalizing on structural changes in the market, such as the global infrastructure investment opportunities.
+              Kainos Investment is a discretionary asset manager licensed in Hong Kong focusing on enhanced value investment. Our enhanced value investment approach seeks long-term returns based on value investing philosophy – investments with the potential for sustainable earnings growth – while capitalizing on structural changes in the market, such as the global infrastructure investment opportunities.
             </p>
           </div>
 

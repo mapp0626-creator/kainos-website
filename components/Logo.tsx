@@ -27,10 +27,14 @@ const Logo: React.FC<LogoProps> = ({ className = "h-10", light = false }) => {
       </svg>
 
       {/* Text Content */}
-      <div className={`flex flex-col justify-center ${textClass} transition-colors duration-300`}>
-        <span className="font-logo font-bold leading-none tracking-wider text-[1.4em]">KAINOS</span>
-        <span className="font-logo text-[0.45em] leading-none tracking-[0.2em] mt-1 ml-0.5">INVESTMENT</span>
-      </div>
+<div className={`flex flex-col justify-center ${textClass} transition-colors duration-300`}>
+  <span className="font-logo font-bold leading-none tracking-wider text-[1.4em]">
+    <span className="text-[1.2em]">K</span>AINOS {/* K만 1.2배 더 크게 */}
+  </span>
+  <span className="font-logo text-[0.5em] leading-none tracking-[0.2em] mt-1 ml-0.5">
+    <span className="text-[1.4em]">I</span>NVESTMENT {/* I만 1.2배 더 크게 */}
+  </span>
+</div>
     </div>
   );
 };

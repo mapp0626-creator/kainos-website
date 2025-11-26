@@ -7,14 +7,14 @@ const Footer: React.FC = () => {
         <div className="text-center md:text-left">
           <p className="font-serif text-lg tracking-widest font-bold mb-2">KAINOS</p>
           <p className="text-gray-500 text-xs">
-            © {new Date().getFullYear()} Kainos Capital Limited. All rights reserved.
+            © {new Date().getFullYear()} Kainos Investment Limited. All rights reserved.
           </p>
         </div>
         
         <div className="flex gap-6 text-xs text-gray-400">
-          <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+          {/* <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
           <a href="#" className="hover:text-white transition-colors">Terms of Use</a>
-          <a href="#" className="hover:text-white transition-colors">SFC Disclosure</a>
+          <a href="#" className="hover:text-white transition-colors">SFC Disclosure</a> */}
         </div>
       </div>
     </footer>

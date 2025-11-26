@@ -31,11 +31,11 @@ const Hero: React.FC = () => {
           Enhanced Perspective on the Market for Investment Success
         </p>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-60">
+        {/* Scroll Indicator */} 
+        {/* <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-60">
           <span className="text-[10px] uppercase tracking-widest text-white">Scroll</span>
           <div className="w-px h-12 bg-gradient-to-b from-white to-transparent"></div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
