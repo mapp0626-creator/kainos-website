@@ -45,7 +45,7 @@ const DisclaimerModal: React.FC<DisclaimerModalProps> = ({ onAccept }) => {
             </p>
             
             <p>
-              The information contained on this website is for information purposes only and does not constitute an offer or solicitation to sell any shares or interests in any funds managed by Kainos Capital Limited ("Kainos").
+              The information contained on this website is for information purposes only and does not constitute an offer or solicitation to sell any shares or interests in any funds managed by Kainos Investment Limited ("Kainos").
             </p>
             
             <p>
