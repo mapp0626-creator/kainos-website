@@ -60,10 +60,10 @@ const Contact: React.FC<SectionProps> = ({ id }) => {
             </div>
           </div>
 
-          {/* Map Image (Grayscale placeholder) 회끼 빼고 싶으면 className에 grayscale만 빼면 됨*/}
+          {/* Map Image */}
           <div className="relative h-96 lg:h-auto bg-gray-200 overflow-hidden group">
             <img 
-              src="/kainos_map.png" 
+              src="/kainos_map_eng_nopin.png" 
               alt="Map image" 
               className="w-full h-full object-cover filter  contrast-125 transition-transform duration-700 group-hover:scale-105"
             />
@@ -77,7 +77,7 @@ const Contact: React.FC<SectionProps> = ({ id }) => {
             </div>
 
             <div className="absolute bottom-6 left-6 bg-white py-2 px-4 shadow-md text-xs font-semibold tracking-wide">
-              CENTRAL DISTRICT
+             Sheung Wan
             </div>
           </div>
 
