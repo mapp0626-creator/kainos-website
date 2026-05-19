@@ -64,7 +64,7 @@ const Header: React.FC = () => {
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? (
-            <X className={isScrolled ? 'text-black' : 'text-white'} />
+            <X className={isScrolled ? 'text-white' : 'text-white'} />
           ) : (
             <Menu className={isScrolled ? 'text-black' : 'text-white'} />
           )}
