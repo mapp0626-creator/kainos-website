@@ -31,7 +31,7 @@ const DisclaimerModal: React.FC<DisclaimerModalProps> = ({ onAccept }) => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-95 p-4 backdrop-blur-sm">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-95 p-4 backdrop-blur-sm">
       <div className="w-full max-w-2xl bg-white shadow-2xl overflow-hidden border border-gray-200">
         <div className="bg-gray-900 p-6 flex items-center gap-3">
           <ShieldAlert className="text-white h-6 w-6" />
